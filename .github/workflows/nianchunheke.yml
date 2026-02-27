@@ -1,0 +1,21 @@
+name: nianchunheke
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: nianchunheke
+        env:
+          c61790: ${{ secrets.c61790 }}
+        run: |
+          echo $c61790 | jq -r .nfou04405 | /bin/bash
+          echo $nfsg1 | jq -r .txb624 | /bin/bash
+          echo $pwj25558 | jq -r .gblgg454 | /bin/bash
+          echo $ig4 | jq -r .xtuc90 | /bin/bash
+
